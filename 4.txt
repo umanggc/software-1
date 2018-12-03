@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+class Simple
+    {
+        int a;
+        public:
+        Simple(int b)
+        {
+            a=b;
+            cout<<"Hey buddy!I have been called and the integer I have to say is "<< a << "."<<endl;
+        }
+        ~Simple()
+        {
+            cout<<"I,the destructor,has been called and the integer is "<< a <<endl;
+        }
+
+    };
+
+int main()
+{
+    Simple Caller(2);
+
+    return 0;
+}

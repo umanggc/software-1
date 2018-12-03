@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+class Simple
+    {
+        public:
+        Simple()
+        {
+            cout<<"Hey buddy!I have been called"<<endl;
+        }
+        ~Simple()
+        {
+            cout<<"I,the destructor,has been called."<<endl;
+        }
+
+    };
+
+int main()
+{
+    Simple Caller;
+    return 0;
+}
